@@ -49,15 +49,50 @@ $faqs = [
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google-faq</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-  <?php foreach ($faqs as $faq) : ?>
-    <h4><?php echo $faq['question']; ?></h4>
-    <div>
-      <?php echo $faq['answer']; ?>
+  <!-- header -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.edigitalagency.com.au/wp-content/uploads/small-google-logo-png-transparent-background-600x200.png" alt="" width="100">
+        Privacy e Termini
+      </a>
     </div>
-  <? endforeach ?>
+    <div class="container d-flex justify-content-start text-dark pt-2">
+      <a href="" class="pe-5 text-decoration-none text-dark">Introduzione</a>
+      <a href="" class="pe-5 text-decoration-none text-dark">Norme sulla privacy</a>
+      <a href="" class="pe-5 text-decoration-none text-dark">Termini di servizio</a>
+      <a href="" class="pe-5 text-decoration-none text-dark">Tecnologie</a>
+      <a href="" class="text-decoration-none text-dark">Domande frequenti</a>
+    </div>
 
+
+  </nav>
+  <!-- main section -->
+  <div class="container p-5">
+    <?php foreach ($faqs as $faq) : ?>
+      <h4><?php echo $faq['question']; ?></h4>
+      <div>
+        <?php echo $faq['answer']; ?>
+      </div>
+    <? endforeach ?>
+  </div>
+  <!-- footer section -->
+  <div class="container d-flex justify-content-start text-dark pt-2 pb-2">
+    <a href="" class="pe-5 text-decoration-none text-dark">Google</a>
+    <a href="" class="pe-5 text-decoration-none text-dark">Tutto su Google</a>
+    <a href="" class="pe-5 text-decoration-none text-dark">Privacy</a>
+    <a href="" class="pe-5 text-decoration-none text-dark">Privacy</a>
+    <div class="d-flex justify-content-end container ">
+      <i class="fa-solid fa-earth-americas"></i>
+      <select>
+        <option value="ita">Italiano</option>
+      </select>
+    </div>
 </body>
+</div>
 <html>
