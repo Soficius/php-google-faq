@@ -79,7 +79,7 @@ $faqs = [
       <div>
         <?php echo $faq['answer']; ?>
       </div>
-    <? endforeach ?>
+    <?php endforeach ?>
   </div>
   <!-- footer section -->
   <div class="container d-flex justify-content-start text-dark pt-2 pb-2">
